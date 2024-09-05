@@ -142,11 +142,13 @@ footer  div{
         width: 150px;
     }
     #projects{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         margin-top: 20px;
     } 
     #projects > div > img{
-        width: 100px;
+        width: 250px;
         height: 100px;
     }
     textarea{
@@ -178,10 +180,13 @@ footer  div{
         width: 250px;
     }
     #projects{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10px;
     } 
     #projects > div > img{
-        width: 100px;
+        width: 305px;
         height: 100px;
     }
 }
@@ -193,7 +198,8 @@ footer  div{
         display: flex;
     }
     #skills {
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
     #projects{
         display: flex;
